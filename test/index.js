@@ -11,8 +11,12 @@ describe('#getIceServers', function() {
 	it('returns IceServer configuration values JSON object', function() {
 		getIceServers(name, function(ice_servers) {
 			ice_servers.should.have.property('iceServers');
-			ice_servers.should.have.property('url');
-			ice_servers.should.have.property('username');
+		});
+	});
+	
+	it('Contains at least one url', function() {
+		getIceServers(name, function(ice_servers) {
+			ice_servers.should.have.property('belch');
 		});
 	});
 	
