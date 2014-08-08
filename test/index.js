@@ -7,7 +7,7 @@ var should = require('chai').should(),
 	
 describe('#getIceServers(' + name + ')', function() {
 	it('should pass a json object of iceservers to the callback', function(done) {
-		getIceServers(name, function (ice_servers) {
+		bridge.getIceServers(name, function (ice_servers) {
 			//console.log(JSON.stringify(ice_servers));
 			should.exist(ice_servers);
 			
