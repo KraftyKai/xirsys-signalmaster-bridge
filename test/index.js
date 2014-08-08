@@ -4,10 +4,17 @@ var should = require('chai').should(),
 	name = 'default';
 	
 describe('#getIceServers(' + name + ')', function() {
-	it('should pass a json object of iceservers to the callback', function(done) {
+	it('should pass a json object', function(done) {
 		getIceServers(name, function(ice_servers) {
-			//console.log(JSON.stringify(ice_servers));
 			should.exist(ice_servers);
+			done();
+		});
+	});
+	
+	it('should contain iceServers', function(done) {
+		getIceServers(name, function(ice_servers) {
+			should.have.property('iceServers');
+			console.log("Response received from Xirsys: \n" + JSON.stringify(ice_servers));
 			done();
 		});
 	});
