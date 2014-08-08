@@ -1,6 +1,6 @@
 // index.js for signalmater-xirsys-bridge
-var config = require('getconfig').
-	querystring = require('querystring');
+var config = require('getconfig'),
+	querystring = require('querystring'),
 	https = require('https');
 	
 var options = {
