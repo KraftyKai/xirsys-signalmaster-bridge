@@ -18,12 +18,8 @@ function safeCB(cb) {
 	}	
 }
 
-exports.confirmRoom = function(name) {
-	
-};
-
 //exports.getIceServers = function(name, cb) {
-function getIceServers(name, cb) {
+exports.getIceServers(name, cb) {
 	options.path = '/getIceServers';
 	var post_data = querystring.stringify({
 		'ident' : config.ident,
@@ -48,7 +44,8 @@ function getIceServers(name, cb) {
 	req.end();
 };
 
+/*
 // Quick tester function
 getIceServers('default', function(ice_servers) {
 	console.log("Response: " + JSON.stringify(ice_servers));
-});
+});*/
