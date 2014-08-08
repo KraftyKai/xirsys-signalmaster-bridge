@@ -50,5 +50,5 @@ function getIceServers(name, cb) {
 
 // Quick tester function
 getIceServers('default', function(ice_servers) {
-	console.log("Response: " + ice_servers);
+	console.log("Response: " + JSON.stringify(ice_servers));
 });
