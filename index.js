@@ -4,7 +4,7 @@ var config = require('getconfig'),
 	https = require('https');
 	
 var options = {
-	hostname: 'api.xirsys.com/getIceServers',
+	hostname: 'api.xirsys.com',
 	port: '80',
 	method: 'POST',
 	headers: {'Content-Type': 'application/x-www-form-urlencoded'}
