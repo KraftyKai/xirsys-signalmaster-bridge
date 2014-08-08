@@ -5,7 +5,7 @@ var config = require('getconfig'),
 	
 var options = {
 	hostname: 'api.xirsys.com',
-	port: '80',
+	port: '443',
 	method: 'POST',
 	headers: {'Content-Type': 'application/x-www-form-urlencoded'}
 };
