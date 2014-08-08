@@ -18,8 +18,7 @@ function safeCB(cb) {
 	}	
 }
 
-//exports.getIceServers = function(name, cb) {
-module.exports = function(name, cb) {
+function getIceServers(name, cb) {
 	options.path = '/getIceServers';
 	var post_data = querystring.stringify({
 		'ident' : config.ident,
@@ -42,8 +41,9 @@ module.exports = function(name, cb) {
 	
 	req.write(post_data);
 	req.end();
-};
+}
 
+module.exports = getIceServers;
 /*
 // Quick tester function
 getIceServers('default', function(ice_servers) {
