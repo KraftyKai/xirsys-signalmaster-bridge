@@ -30,7 +30,7 @@ function getIceServers(name, cb) {
 		'secret' : config.secret,
 		'domain' : config.domain,
 		'application' : config.application,
-		'room' : 'pants',
+		'room' : 'legs',
 		'secure': 1
 	});
 	
