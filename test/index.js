@@ -13,7 +13,7 @@ describe('#getIceServers(' + name + ')', function() {
 	
 	it('should contain iceServers', function(done) {
 		getIceServers(name, function(ice_servers) {
-			should.have.property('iceServers');
+			ice_servers.should.have.property('iceServers');
 			console.log("Response received from Xirsys: \n" + JSON.stringify(ice_servers));
 			done();
 		});
