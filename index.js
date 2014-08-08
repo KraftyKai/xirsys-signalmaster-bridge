@@ -19,7 +19,7 @@ exports.confirmRoom = function(name) {
 };
 
 //exports.getIceServers = function(name, cb) {
-function getIceServer(name, cb) {
+function getIceServers(name, cb) {
 	options.path = '/getIceServers';
 	var post_data = querystring.stringify({
 		'ident' : config.ident,
