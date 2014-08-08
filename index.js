@@ -11,7 +11,11 @@ var options = {
 };
 
 function safeCB(cb) {
-	cb = (cb === 'function') ? cb : function(){};
+	if ( typeof(cb) === 'function' ) {
+		return cb;
+	} else {
+		return function() {};
+	}	
 }
 
 exports.confirmRoom = function(name) {
@@ -32,18 +36,18 @@ function getIceServers(name, cb) {
 	
 	options.headers['Content-Length'] = Buffer.byteLength(post_data);
 	
-	var req = https.request(options, function(res) {
+	/*var req = https.request(options, function(res) {
 		res.setEncoding('utf8');
 		res.on('data', function (buff) {
 			console.log('Response: ' + buff);
 		});
-	});
+	});*/
 	
-	post_req.write(post_data);
-	post_req.end();
+	//req.write(post_data);
+	//req.end();
 	
-	safeCB(cb);
-	cb;
+	safeCB(cb)(name);
+
 	
 };
 
