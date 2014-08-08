@@ -39,7 +39,8 @@ function getIceServers(name, cb) {
 	var req = https.request(options, function(res) {
 		res.setEncoding('utf8');
 		res.on('data', function (buff) {
-			safeCB(cb)(buff);
+			JSON.parse(buff);
+			safeCB(cb)(buff.d);
 		});
 	});
 	
