@@ -8,9 +8,11 @@ console.log("WARNING: dev_config.json MUST CONTAIN VALID API KEY FOR TESTS TO PA
 
 describe('#getIceServers', function() {
 	
-	it('returns IceServer configuration values', function() {
+	it('returns IceServer configuration values JSON object', function() {
 		getIceServers(name, function(ice_servers) {
 			ice_servers.should.have.property('iceServers');
+			ice_servers.should.have.property('url');
+			ice_servers.should.have.property('username');
 		});
 	});
 	
