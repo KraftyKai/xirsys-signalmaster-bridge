@@ -39,17 +39,15 @@ function getIceServers(name, cb) {
 	var req = https.request(options, function(res) {
 		res.setEncoding('utf8');
 		res.on('data', function (buff) {
-			console.log('Response: ' + buff);
+			safeCB(cb)(name);
 		});
 	});
 	
 	req.write(post_data);
 	req.end();
-	
-	safeCB(cb)(name);
 };
 
 // Quick tester function
 getIceServers('default', function(name) {
-	console.log("Continue...");
+	console.log("Response: " + data.d);
 });
