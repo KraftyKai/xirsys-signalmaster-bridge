@@ -2,8 +2,8 @@
 var should = require('chai').should(),
 	bridge = require('../index.js'),
 	getIceServers = bridge.getIceServers,
-	return_value;
-	name = 'default',
+	return_value,
+	name = 'default';
 	
 describe('#getIceServers(' + name + ')', function() {
 	it('should pass a json object of iceservers to the callback', function(done) {
