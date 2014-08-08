@@ -1,4 +1,5 @@
 // index.js for tests
+/*
 var should = require('chai').should(),
 	bridge = require('../index'),
 	getIceServers,
@@ -21,5 +22,5 @@ describe('#getIceServers', function() {
 		getIceServers(name).should.have.property('iceServers');
 	});
 	
-});
+});*/
 
