@@ -19,7 +19,7 @@ function safeCB(cb) {
 }
 
 //exports.getIceServers = function(name, cb) {
-exports.getIceServers(name, cb) {
+exports.getIceServers = function(name, cb) {
 	options.path = '/getIceServers';
 	var post_data = querystring.stringify({
 		'ident' : config.ident,
