@@ -1,7 +1,7 @@
 // index.js for tests
 var should = require('chai').should(),
 	bridge = require('../index'),
-	getIceServers = bridge.getIceServers,
+	getIceServers = bridge,
 	return_value,
 	name = 'default';
 	
