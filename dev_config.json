@@ -1,0 +1,10 @@
+{
+	"isDev": true,
+	"logLevel": 3,
+	"ident" : "<username>",
+	"secret" : "<API key>",
+	"domain" : "<domain>",
+	"application" : "<application name>",
+	"room" : "<room name>",
+	"secure" : 1
+}
