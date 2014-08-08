@@ -37,10 +37,10 @@ function getIceServers(name, cb) {
 	options.headers['Content-Length'] = Buffer.byteLength(post_data);
 	
 	var req = https.request(options, function(res) {
-		res.setEncoding('utf8');
-		res.on('data', function (buff) {
+		//res.setEncoding('utf8');
+		//res.on('data', function (buff) {
 			console.log('Response: ' + buff);
-		});
+		//});
 	});
 	
 	//req.write(post_data);
