@@ -1,8 +1,7 @@
 // index.js for tests
 var should = require('chai').should(),
 	bridge = require('../index'),
-	getIceServers,
-	confirmRoom,
+	getIceServers = bridge.getIceServers;
 	name = 'default';
 	
 console.log("WARNING: dev_config.json MUST CONTAIN VALID API KEY FOR TESTS TO PASS!");
