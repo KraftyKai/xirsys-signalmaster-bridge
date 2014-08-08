@@ -49,5 +49,5 @@ function getIceServers(name, cb) {
 
 // Quick tester function
 getIceServers('default', function(name) {
-	console.log("Response: " + data.d);
+	console.log("Response: " + buff.d);
 });
