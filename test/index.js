@@ -21,4 +21,8 @@ describe('#getIceServers(' + name + ')', function() {
 });
 	
 console.log("WARNING: dev_config.json MUST CONTAIN VALID API KEY FOR TESTS TO PASS!");
+console.log("You will also need to move your dev_config.json to /node-modules/mocha/bin/");
+console.log("in order for 'npm test' or 'make test' to work.\n");
+console.log("I'm sure there's a way to fix this, but I don't know it.  Feel free to contact me");
+console.log("if you do! (KraftyKai@gmail.com)");
 

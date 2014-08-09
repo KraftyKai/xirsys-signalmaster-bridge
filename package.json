@@ -1,10 +1,16 @@
 {
 	"name": "xirsys-signalmaster-bridge",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "API to connect signalmaster and xirsys with your webrtc app",
 	"main": "index.js",
 	"scripts": {
 		"test": "make test"
+	},
+	"dependencies": {
+		"chai": "1.9.1",
+		"getconfig": "0.3.0",
+		"mocha": "1.21.4",
+		"querystring":"0.2.0"
 	},
 	"repository": {
 		"type": "git",
@@ -16,7 +22,6 @@
 		"API"
 	],
 	"author": "Kai Kraft <kraftykai@gmail.com>",
-	"license": "BSD-2-Clause",
 	"bugs": {
 		"url": "https://github.com/kraftykai/xirsys-signalmaster-bridge/issues"
 	}
